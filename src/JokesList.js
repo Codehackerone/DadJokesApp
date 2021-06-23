@@ -29,13 +29,13 @@ class JokeList extends Component {
             <span>DAD</span> Jokes
           </h1>
           <img src="laugh.svg" alt="laughing emoji"/>
-          <button className='JokeList-getmore'>New Jokes</button>
+          <button className="JokeList-getmore">New Jokes</button>
         </div>
-        <h1>Dad Jokes</h1>
-        <div className="JokeList-joke"></div>
-        {this.state.jokes.map((j) => (
-          <div>{j}</div>
-        ))}
+        <div className="JokeList-jokes">
+          {this.state.jokes.map((j) => (
+            <div>{j}</div>
+          ))}
+        </div>
       </div>
     );
   }
